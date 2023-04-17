@@ -1,12 +1,12 @@
 
 === Ecere Corporation
 
-Ecere is providing a deployment of its GNOSIS Map Server with a focus on a Sentinel-2 Level 2A data cube. _OGC API - Tiles_, _OGC API - Coverages_, _OGC API - Maps_, _OGC API - Discrete Global Grid Systems_, _Common Query Language (CQL2)_, and  _OGC API - Processes - Part 3: Workflows & Chaining_ are the supported standards and extensions for this task.
+Ecere is providing a deployment of its GNOSIS Map Server with a focus on a Sentinel-2 Level 2A data cube, as well as a client as a component. _OGC API - Tiles_, _OGC API - Coverages_, _OGC API - Maps_, _OGC API - Discrete Global Grid Systems_, _Common Query Language (CQL2)_, and  _OGC API - Processes - Part 3: Workflows & Chaining_ are the supported standards and extensions for this task.
 
 The plan is to use machine learning process output from the Wildland Fire Fuel Indicator Workflow to identify vegetation fuel types from sentinel-2 bands, then combine with weather data to assess wildfire hazards risk in Australia.
-The workflow will use as input the sentinel-2 OGC API data cube from our GNOSIS Map Server.
+The workflow will use as input the sentinel-2 OGC API data cube from our GNOSIS Map Server. The Cartographer client will configure the workflow, request the data and visualize the result on a 3D globe.
 
-- Component: Data Cube and Wildfire vegetation fuel map / risk analysis.
+- Component: Data Cube and Wildfire vegetation fuel map / risk analysis, and client for workflow execution and visualization of vegetation fuel type output.
 
 - Inputs: ESA Sentinel-2 L2A data (from AWS / Element 84), Temperature / Precipitation / Wind climate data, Reference data for training: vegetation fuel type classification, wildfire risk.
 
